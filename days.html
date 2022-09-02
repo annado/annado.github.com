@@ -2,12 +2,19 @@
 <html>
   <head>
     <title>Days Since</title>
+    <style type="text/css">
+      h1 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 20vh;
+      }
+    </style>
   </head>
   <body>
     <h1 id="count"></h1>
     <script type="text/javascript">
       const diff = Math.round((new Date() - new Date('2022-08-23')) / 1000 / 60 / 60 / 24) - 1;
-      document.getElementByID("count").textContent = diff;
+      document.getElementById("count").textContent = diff;
     </script>
     <p></p>
   </body>
